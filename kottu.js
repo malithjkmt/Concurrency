@@ -4,13 +4,13 @@ kamal = Semaphore(0)
 Thread Kamal
     while(true):
         make_2_rounds_of_kottu()
-        r.up()
-        k.down()
+        rani.up()
+        kamal.down()
         serve_kottu()
 
 Thread Rani
     while(true):
         make_3_curries()
-        k.up()
-        r.down()
+        kamal.up()
+        rani.down()
         serve_curries()

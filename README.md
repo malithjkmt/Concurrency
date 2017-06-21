@@ -13,8 +13,7 @@ If a student finds that the pizza is gone, the student goes to sleep until anoth
 Write code to synchronize the student threads and the Kamal’s pizza delivery thread.
 Your solution should avoid deadlock and call Kamal’s Pizza (i.e., wake up the delivery thread) exactly once each time a pizza is exhausted. No slice/piece of pizza may be consumed by more than one student. Comment your code.
 
-> ## Solution 
-> ## Using **mutex**, **semaphore** and **conditional** variables 
+> ## Solution Using **mutex**, **semaphore** and **conditional** variables 
 > see [pizza.js](./pizza.js)
 
 
@@ -30,7 +29,6 @@ Your solution should avoid deadlock and call Kamal’s Pizza (i.e., wake up the 
 
 Kamal and Rani work in a restaurant that specialises in a made-to-order Koththu Roti and Curry combination. Kamal makes 2 rounds of Koththu Roti while, at the same time, Rani makes 2 bowls of Curry. When the Koththu Roti and Curry are ready Kamal and Rani each, at the same time, serve a Koththu Roti and Curry combination to a customer(s). These actions are repeated throughout the day. Note that Kamal cannot serve until Rani has made the curry and Rani cannot serve until Kamal has made the Koththu Roti. Write a concurrent program that demonstrates the behavior of Kamal and Rani while satisfying the given constraints
 
-> ## Solution
-> ## Using **semaphores**
+> ## Solution Using **semaphores**
 > ### see [kottu.js](./kottu.js)
 
