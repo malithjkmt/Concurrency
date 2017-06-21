@@ -27,8 +27,14 @@ Your solution should avoid deadlock and call Kamal’s Pizza (i.e., wake up the 
 
 ## 2. Kottu Problem
 
-Kamal and Rani work in a restaurant that specialises in a made-to-order Koththu Roti and Curry combination. Kamal makes 2 rounds of Koththu Roti while, at the same time, Rani makes 2 bowls of Curry. When the Koththu Roti and Curry are ready Kamal and Rani each, at the same time, serve a Koththu Roti and Curry combination to a customer(s). These actions are repeated throughout the day. Note that Kamal cannot serve until Rani has made the curry and Rani cannot serve until Kamal has made the Koththu Roti. Write a concurrent program that demonstrates the behavior of Kamal and Rani while satisfying the given constraints
+Kamal and Rani work in a restaurant that specialises in a made-to-order Koththu Roti and Curry combination. Kamal makes 2 rounds of Koththu Roti while, at the same time, Rani makes 2 bowls of Curry. When the Koththu Roti and Curry are ready Kamal and Rani each, at the same time, serve a Koththu Roti and Curry combination to a customer(s). These actions are repeated throughout the day. Note that Kamal cannot serve until Rani has made the curry and Rani cannot serve until Kamal has made the Koththu Roti. Write a concurrent program that demonstrates the behavior of Kamal and Rani while satisfying the given constraints.
 
 > ## Solution Using **semaphores**
 > ### see [kottu.js](./kottu.js)
 
+## 2. Tickets Purchase Problem
+
+Tickets for a concert are to be sold through a web site. Only a limited number of tickets are available and multiple fans may try to purchase them at the same time. Each fan can purchase up to 4 tickets at a time. Write a server-side script to keep track of the remaining number of tickets and income earned from tickets. No need to keep track of who purchased tickets.
+
+> ## Solution Using **Mutex**
+> ### see [tickets.js](./tickets.js)
