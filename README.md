@@ -13,4 +13,17 @@ If a student finds that the pizza is gone, the student goes to sleep until anoth
 Write code to synchronize the student threads and the Kamal’s pizza delivery thread.
 Your solution should avoid deadlock and call Kamal’s Pizza (i.e., wake up the delivery thread) exactly once each time a pizza is exhausted. No slice/piece of pizza may be consumed by more than one student. Comment your code.
 
-### Solution using **mutex**, **semaphore** and **Conditional** variables --> [pizza.js](./pizza.js)
+## Solution 
+## Using **mutex**, **semaphore** and **conditional** variables 
+### see [pizza.js](./pizza.js)
+
+
+| **Technique** | **Reason** |
+| --- | --- |
+| Set initial value of Semaphore kamal to 0, kamal.down() at the top of pizzaKamal() | Kamal will not deliver pizza unless there&#39;s an order |
+| Mutex for the m, m.lock() before accessing variable &#39;slices&#39; | For mutual Exclusion |
+| Kamal.up only if slices == 0 | call Kamal&#39;s Pizza exactly once each time a pizza is exhausted |
+| Check for number of slices and call Kamal before waiting | To avoid deadlock (the last the student to discover that the group is out of pizza sleeps without calling Kamal) |
+| Use broadcast instead of singnal() s number of students. | To avoid starvation (if number of students in the group &gt; s) |
+
+
