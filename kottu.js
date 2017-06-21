@@ -10,7 +10,7 @@ Thread Kamal
 
 Thread Rani
     while(true):
-        make_3_curries()
+        make_2_curries()
         kamal.up()
         rani.down()
         serve_curries()
